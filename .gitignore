@@ -255,3 +255,6 @@ terraform.rc
 # planout
 
 *.json
+
+# Docker volumes / runtime data
+Pipeline/ny_taxi_postgres_data/
