@@ -100,18 +100,6 @@ services:
       kestra_postgres:
         condition: service_started
 
-  jupyter:
-    image: jupyter/pyspark-notebook:latest
-    container_name: jupyter
-    ports:
-      - "8888:8888"
-    volumes:
-      - ./notebooks:/home/jovyan/work
-      - ./gcp:/home/jovyan/.gcp:ro
-    environment:
-      GOOGLE_APPLICATION_CREDENTIALS: /home/jovyan/.gcp/wide-graph-486209-v8-d24fc963fa1f.json
-    command: start-notebook.sh --NotebookApp.token=''
-
 networks:
   default:
     name: pipeline_default
