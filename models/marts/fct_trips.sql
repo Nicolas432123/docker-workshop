@@ -28,7 +28,7 @@ select
     -- Trip timing
     trips.pickup_datetime,
     trips.dropoff_datetime,
-    trips.store_and_fwd_flag,
+    CAST(trips.store_and_fwd_flag AS STRING) AS store_and_fwd_flag,
 
     -- Trip metrics
     trips.passenger_count,

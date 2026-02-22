@@ -6,5 +6,6 @@ sources:
     database: wide-graph-486209-v8
     schema: zoomcamp
     tables:
-      - name: yellow_tripdata
-      - name: green_tripdata
+      - name: yellow_tripdata_1
+      - name: green_tripdata_1
+      - name: fhv_tripdata
