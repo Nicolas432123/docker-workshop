@@ -258,3 +258,8 @@ terraform.rc
 
 # Docker volumes / runtime data
 Pipeline/ny_taxi_postgres_data/
+
+.bruin.yml
+logs/runs
+logs/*.log
+*.py[cod]
