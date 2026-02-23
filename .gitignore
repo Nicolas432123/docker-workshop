@@ -263,3 +263,8 @@ Pipeline/ny_taxi_postgres_data/
 logs/runs
 logs/*.log
 *.py[cod]
+
+# DuckDB local files
+*.db
+*.duckdb
+duckdb.db
